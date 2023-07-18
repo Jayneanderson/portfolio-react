@@ -18,7 +18,7 @@ const projects = [
         name: "Bank2Gama",
         description: "Site e API de um banco digital",
         image: bank2gama,
-        icons: [javascript, node, vue, html, css],
+        icons: [javascript, node, mysql, vue, html, css],
     },
     {
         id: 2,
