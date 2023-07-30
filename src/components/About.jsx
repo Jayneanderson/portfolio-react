@@ -2,16 +2,14 @@ import about from "../assets/images/about.jpg";
 
 const About = () => {
     return (
-        <section id="about" className="about-container">
+        <section id="about" className="about-container padding-left-right">
             <div className="about-group">
-                <div className="about-image-group">
-                    <div>
-                        <img
-                            className="about-image"
-                            src={about}
-                            alt="Foto de homem preto sorrindo com a mão esquerda no ombro direito, camisa verde escura com marcas espalhadas na cor cinza"
-                        />
-                    </div>
+                <div className="about-group-image">
+                    <img
+                        className="about-image"
+                        src={about}
+                        alt="Foto de homem preto sorrindo com a mão esquerda no ombro direito, camisa verde escura com marcas espalhadas na cor cinza"
+                    />
                 </div>
                 <div className="about-me">
                     <div className="bar">
@@ -27,10 +25,10 @@ const About = () => {
                         automatizados e Desenvolvimento Orientado a Testes
                         (TDD).
                     </p>
-                    <div className="social-media-container">
+                    <div className="social-media-group">
                         <a
                             href="https://github.com/Jayneanderson"
-                            className="social-media-group button"
+                            className="social-media-wrapper button"
                         >
                             <svg
                                 className="social-media-icon"
@@ -51,7 +49,7 @@ const About = () => {
                         </a>
                         <a
                             href="https://www.linkedin.com/in/jayneandersonn/"
-                            className="social-media-group button"
+                            className="social-media-wrapper button"
                         >
                             <svg
                                 className="social-media-icon"
@@ -73,7 +71,7 @@ const About = () => {
                         </a>
                         <a
                             href="https://www.instagram.com/jayneandersonn/"
-                            className="social-media-group button"
+                            className="social-media-wrapper button"
                         >
                             <svg
                                 className="social-media-icon"

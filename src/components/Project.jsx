@@ -98,7 +98,7 @@ const Project = () => {
     return (
         <Fragment>
             <div
-                class="project-background padding"
+                class="project-background padding-left-right"
                 style={{
                     background: `, url("${project?.banner}") no-repeat`,
                     backgroundImage: `linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(${project?.banner})`,

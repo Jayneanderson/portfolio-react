@@ -1,3 +1,5 @@
+import HeaderResponsive from "./HeaderRespnsive";
+
 export const handleClick = (event) => {
     //retira o comportamento padrão de um evento, neste caso, do click
     event.preventDefault();
@@ -23,7 +25,7 @@ export const smoothScrollTo = (endX, endY, duration) => {
     const startX = window.scrollX || window.pageXOffset;
     const startY = window.scrollY || window.pageYOffset;
     const distanceX = endX - startX;
-    const distanceY = endY - startY;
+    const distanceY = endY - startY - 90;
     const startTime = new Date().getTime();
 
     duration = typeof duration !== "undefined" ? duration : 400;
@@ -48,58 +50,65 @@ export const smoothScrollTo = (endX, endY, duration) => {
 
 const Header = () => {
     return (
-        <header className="header" id="start">
-            <div className="content">
-                <a href="/" className="logo">
-                    .JSantos
-                </a>
-                <nav className="nav">
-                    <ul className="list-group">
-                        <li className=" button list-group-item">
-                            <div className="bar">
-                                <a className="list-group-link" href="/">
-                                    Home
-                                </a>
-                            </div>
-                        </li>
-                        <li
-                            className=" button list-group-item"
-                            onClick={handleClick}
-                        >
-                            <div className="bar">
-                                <a className="list-group-link" href="#about">
-                                    Sobre
-                                </a>
-                            </div>
-                        </li>
-                        <li
-                            className=" button list-group-item"
-                            onClick={handleClick}
-                        >
-                            <div className="bar">
-                                <a className="list-group-link" href="#projects">
-                                    Projetos
-                                </a>
-                            </div>
-                        </li>
-                        <li className=" button list-group-item">
-                            <div className="bar">
-                                <a
-                                    className="list-group-link"
-                                    href="#contatc"
-                                    onClick={handleClick}
-                                >
-                                    Contato
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <a href="#" id="home-responsivo">
-                .JSantos
-            </a>
-        </header>
+        <>
+            <header className="header padding-left-right" id="start">
+                <div className="content">
+                    <a href="/" className="logo">
+                        .JSantos
+                    </a>
+                    <nav className="nav">
+                        <ul className="list-group">
+                            <li className=" button list-group-item">
+                                <div className="bar">
+                                    <a className="list-group-link" href="/">
+                                        Home
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                className=" button list-group-item"
+                                onClick={handleClick}
+                            >
+                                <div className="bar">
+                                    <a
+                                        className="list-group-link"
+                                        href="#about"
+                                    >
+                                        Sobre
+                                    </a>
+                                </div>
+                            </li>
+                            <li
+                                className=" button list-group-item"
+                                onClick={handleClick}
+                            >
+                                <div className="bar">
+                                    <a
+                                        className="list-group-link"
+                                        href="#projects"
+                                    >
+                                        Projetos
+                                    </a>
+                                </div>
+                            </li>
+                            <li className=" button list-group-item">
+                                <div className="bar">
+                                    <a
+                                        className="list-group-link"
+                                        href="#contatc"
+                                        onClick={handleClick}
+                                    >
+                                        Contato
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <HeaderResponsive />
+        </>
     );
 };
 

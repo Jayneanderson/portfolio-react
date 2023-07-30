@@ -2,7 +2,7 @@ import { handleClick } from "./Header";
 
 const Banner = () => {
     return (
-        <section className="presentation-container">
+        <section className="presentation-container padding-left-right">
             <div className="presentation-group">
                 <div className="presentation-group-text">
                     <p className="presentation-hi">

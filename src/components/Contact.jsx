@@ -9,10 +9,10 @@ const Contact = () => {
                 <p className="text">Vamos bater um papo</p>
             </div>
             <div className="contact-group">
-                <div className="social-media-container">
+                <div className="social-media-group">
                     <a
                         href="https://github.com/Jayneanderson"
-                        className="social-media-group button"
+                        className="social-media-wrapper button"
                     >
                         <svg
                             className="social-media-icon"
@@ -33,7 +33,7 @@ const Contact = () => {
                     </a>
                     <a
                         href="https://www.linkedin.com/in/jayneandersonn/"
-                        className="social-media-group button"
+                        className="social-media-wrapper button"
                     >
                         <svg
                             className="social-media-icon"
@@ -55,7 +55,7 @@ const Contact = () => {
                     </a>
                     <a
                         href="https://www.instagram.com/jayneandersonn/"
-                        className="social-media-group button"
+                        className="social-media-wrapper button"
                     >
                         <svg
                             className="social-media-icon"
@@ -78,7 +78,7 @@ const Contact = () => {
                     <a
                         id="email"
                         href="mailto:jayneandersonn@gmail.com"
-                        className="social-media-group button"
+                        className="social-media-wrapper button"
                     >
                         <svg
                             className="social-media-icon"
@@ -101,9 +101,7 @@ const Contact = () => {
                             </defs>
                         </svg>
 
-                        <span className="social-media-name">
-                            jayneandersonn@gmail.com
-                        </span>
+                        <span className="social-media-name">E-mail</span>
                     </a>
                 </div>
             </div>
