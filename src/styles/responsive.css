@@ -1,0 +1,147 @@
+@media only screen and (max-width: 1200px) {
+    .about-me {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        padding: 16px 0;
+        justify-content: center;
+    }
+
+    .footer-container .logo {}
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* Menu */
+
+    .header {
+        text-align: center;
+    }
+
+    .header .content {
+        justify-content: center;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    #menuButton:checked~.container-responsive {
+        left: 0;
+        top: 0;
+        transition: 0.3s ease all;
+    }
+
+    #menuButton:checked+#labelButton #cancel {
+        left: 270px;
+        transition: 0.3s ease all;
+    }
+
+    #labelButton {
+        position: absolute;
+        top: 40px;
+    }
+
+    .menu-button {
+        position: fixed;
+        left: 8%;
+        font-weight: bold;
+        color: var(--ghostWhite);
+        cursor: pointer;
+        z-index: 15;
+        font-size: 1.5rem;
+    }
+
+    #cancel {
+        top: 10px;
+        left: -270px;
+        z-index: 20;
+        transition: 0.3s ease all;
+    }
+
+    .container-responsive {
+        width: 300px;
+        position: fixed;
+        height: 100%;
+        left: -300px;
+        padding-top: 1rem;
+        z-index: 15;
+        box-shadow: 0px 0px 3px 2px rgb(24, 26, 39);
+        background-color: var(--specialBlue);
+        transition: 0.3s ease all;
+    }
+
+
+    #navResponsive .logo {
+        padding-left: 1rem;
+    }
+
+    #navResponsive .list-group {
+        gap: 0;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    #navResponsive .list-group-item {
+        width: 100%;
+        border-radius: 0;
+        line-height: 60px;
+        border-bottom: 1px solid var(--specialRed);
+    }
+
+    #navResponsive .list-group-item:first-child {
+        border-top: 1px solid var(--specialRed);
+
+    }
+
+    #navResponsive .list-group-item:hover .list-group-link {
+        padding-left: 1.7rem;
+        transition: 0.2s ease all;
+    }
+
+    #navResponsive .list-group-link {
+        justify-content: flex-start;
+        transition: 0.2s ease all;
+    }
+
+    .container-margin-bottom {
+        margin-bottom: 3rem;
+    }
+
+    /* Presentation */
+
+    .presentation-name {
+        color: var(--specialRed)
+    }
+
+    .group-buttons .button {
+        width: 100%;
+    }
+
+
+    .about-group-image {
+        width: 90%;
+    }
+
+    .bar {
+        text-align: center;
+    }
+
+    .social-media-wrapper.button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    /* Project */
+
+    .project-container {
+        width: 100%;
+    }
+
+    /* Contacts */
+
+}
+
+
+@media only screen and (max-width: 480px) {}
