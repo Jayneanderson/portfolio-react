@@ -78,24 +78,29 @@
     }
 
     #navResponsive .list-group {
-        gap: 0;
+        gap: 1rem;
         flex-direction: column;
         padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     #navResponsive .list-group-item {
         width: 100%;
-        border-radius: 0;
-        line-height: 60px;
-        border-bottom: 1px solid var(--specialRed);
+        border-radius: 0.4rem;
+        line-height: 44px;
+        transition: 0.2s ease all;
+        /* border-bottom: 1px solid var(--specialRed); */
     }
 
-    #navResponsive .list-group-item:first-child {
-        border-top: 1px solid var(--specialRed);
-
+    #navResponsive .list-group-item:hover {
+        background-color: var(--mediumDarkBlue);
+        transition: 0.2s ease all;
     }
+
 
     #navResponsive .list-group-item:hover .list-group-link {
+        padding: 0;
         padding-left: 1.7rem;
         transition: 0.2s ease all;
     }

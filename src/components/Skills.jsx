@@ -78,7 +78,7 @@ const Skills = () => {
             <div className="bar margin-bottom">
                 <h2 className="title">Conhecimentos</h2>
                 <p className="text">
-                    Dá só uma olhadinha em tecnologias que eu já domino.
+                    Dá só uma olhadinha nas tecnologias que eu já domino.
                 </p>
             </div>
             <div className="knowledge-group">
