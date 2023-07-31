@@ -38,7 +38,10 @@ const Banner = () => {
                     >
                         Contato
                     </a>
-                    <a href="#" className="button download">
+                    <a
+                        href="https://drive.google.com/file/d/1Ftjpj2vfq_hFF0mzD4B_N1A761ScDe2z/view?usp=sharing"
+                        className="button download"
+                    >
                         Baixar CV
                     </a>
                 </div>
